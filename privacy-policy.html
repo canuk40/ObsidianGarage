@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – ObsidianGarage</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px; line-height: 1.7; color: #1c1c1e;
+      background: #f5f5f7; padding: 0;
+    }
+    header {
+      background: #1c1c1e; color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; color: #aeaeb2; font-size: 0.9rem; }
+    main {
+      max-width: 760px; margin: 40px auto; padding: 0 24px 80px;
+    }
+    section { background: #fff; border-radius: 16px; padding: 28px 32px; margin-bottom: 20px;
+              box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    h2 { font-size: 1.15rem; font-weight: 700; color: #1c1c1e; margin-bottom: 12px; }
+    p  { color: #3a3a3c; margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 20px; color: #3a3a3c; }
+    ul li { margin-bottom: 6px; }
+    a  { color: #ff9f0a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block; background: #ff9f0a; color: #000;
+      font-size: 0.7rem; font-weight: 700; padding: 2px 8px;
+      border-radius: 20px; vertical-align: middle; margin-left: 6px;
+    }
+    footer { text-align: center; color: #aeaeb2; font-size: 0.85rem; padding-bottom: 40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ObsidianGarage</h1>
+  <p>Privacy Policy &mdash; Last updated: March 2, 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Overview</h2>
+    <p>
+      ObsidianGarage ("the App", "we", "our") is a vehicle maintenance tracker for Android,
+      developed and published by <strong>[YOUR NAME / COMPANY NAME]</strong>.
+      We are committed to protecting your privacy. This policy explains what information
+      the App collects, how it is used, and your rights with respect to that information.
+    </p>
+    <p>
+      <strong>Short version:</strong> your vehicle data stays on your device. We do not sell
+      your data. We do not serve ads. Optional cloud features require a Google account and
+      are only active when you enable them.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Information We Collect</h2>
+
+    <h2 style="font-size:1rem; margin-top:16px; margin-bottom:8px;">2a. Data you create in the App</h2>
+    <p>
+      Vehicle records, service logs, reminders, odometer readings, cost data, notes, and
+      receipt photos you add are stored <strong>locally on your device</strong> using
+      an encrypted SQLite database. This data never leaves your device unless you
+      explicitly enable Cloud Sync or Cloud Backup (see Section 4).
+    </p>
+
+    <h2 style="font-size:1rem; margin-top:16px; margin-bottom:8px;">2b. Anonymous usage analytics</h2>
+    <p>
+      The App uses <strong>Firebase Analytics</strong> (Google LLC) to collect anonymous,
+      aggregate usage statistics — for example, which features are used most often,
+      how often a service log is added, or whether a backup is triggered. This data
+      cannot be used to identify you individually. No vehicle records, cost data, or
+      personally identifiable information (PII) is ever sent to Firebase Analytics.
+    </p>
+    <p>
+      You can opt out of analytics collection at any time through the
+      <em>Settings → Notifications &amp; Privacy</em> section of the App,
+      or via your device's "Opt out of Ads Personalisation" system setting.
+    </p>
+
+    <h2 style="font-size:1rem; margin-top:16px; margin-bottom:8px;">2c. Purchase information</h2>
+    <p>
+      In-app purchases (Pro, Lifetime, Annual subscription) are processed entirely by
+      <strong>Google Play Billing</strong>. We receive only a confirmation that a purchase
+      has been made and the associated product ID. We do not collect or store payment card
+      numbers, billing addresses, or any other payment details.
+    </p>
+
+    <h2 style="font-size:1rem; margin-top:16px; margin-bottom:8px;">2d. Account information (optional, Premium only) <span class="badge">Pro / Lifetime</span></h2>
+    <p>
+      If you choose to use Cloud Sync or Cloud Backup, you sign in with your Google account
+      via <strong>Firebase Authentication</strong>. We store your Google account's
+      <em>User ID (UID)</em> and <em>email address</em> in Firebase to associate your data
+      with your account. We do not access your Google contacts, Calendar, Drive files, or
+      any other Google account data.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li><strong>Vehicle &amp; maintenance data</strong> — to power the core features of the App
+          (logs, reminders, statistics, PDF/CSV export).</li>
+      <li><strong>Analytics</strong> — to understand how the App is used and improve it over time.</li>
+      <li><strong>Purchase status</strong> — to unlock Pro or Lifetime features you have purchased.</li>
+      <li><strong>Google account (optional)</strong> — to authenticate you and route your sync and
+          backup data to your private cloud storage bucket.</li>
+    </ul>
+    <p>We do not use your data for advertising, profiling, or any purpose not listed above.</p>
+  </section>
+
+  <section>
+    <h2>4. Cloud Sync &amp; Cloud Backup <span class="badge">Lifetime / Annual</span></h2>
+    <p>
+      Cloud Sync and Cloud Backup are optional Premium features. When enabled:
+    </p>
+    <ul>
+      <li>Your vehicle records, service logs, and reminders are stored in
+          <strong>Firebase Firestore</strong> and <strong>Firebase Storage</strong>
+          (Google LLC, USA) under a path unique to your Google UID. No other user
+          can access your data.</li>
+      <li>Backup files are encrypted in transit (TLS) and at rest by Firebase's
+          default encryption.</li>
+      <li>You can delete all cloud data at any time from
+          <em>Settings → Account → Delete cloud data</em>,
+          or by deleting your account.</li>
+      <li>If you sign out or cancel your subscription, we stop syncing. Your local data
+          on-device is not affected.</li>
+    </ul>
+    <p>
+      Firebase infrastructure is operated by Google LLC. For Google's own privacy
+      practices see <a href="https://policies.google.com/privacy" target="_blank">
+      policies.google.com/privacy</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Data Retention</h2>
+    <ul>
+      <li><strong>Local data</strong> — retained until you uninstall the App or clear app data.</li>
+      <li><strong>Firebase Analytics</strong> — retained for 14 months per Google's default,
+          after which it is automatically deleted.</li>
+      <li><strong>Cloud Sync / Backup data</strong> — retained until you delete it from within
+          the App or delete your Firebase account. We will delete your cloud data
+          within 30 days of an account deletion request.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Data Sharing &amp; Third Parties</h2>
+    <p>We do not sell, rent, or share your personal data with any third party for marketing
+       or advertising purposes. We use only the following third-party services:</p>
+    <ul>
+      <li><strong>Google Play Billing</strong> — purchase processing
+          (<a href="https://play.google.com/about/play-terms/" target="_blank">Terms</a>)</li>
+      <li><strong>Firebase Analytics</strong> — anonymous usage analytics
+          (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy</a>)</li>
+      <li><strong>Firebase Authentication</strong> — optional sign-in (Premium only)</li>
+      <li><strong>Firebase Firestore &amp; Storage</strong> — optional cloud sync/backup (Premium only)</li>
+    </ul>
+    <p>All of the above are operated by Google LLC. We have no other third-party data processors.</p>
+  </section>
+
+  <section>
+    <h2>7. Children's Privacy</h2>
+    <p>
+      The App is not directed at children under the age of 13. We do not knowingly collect
+      personal information from children under 13. If you believe a child has provided
+      us with personal information, please contact us so we can delete it.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Your Rights</h2>
+    <p>Depending on your location you may have rights including:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of the data we hold about you.</li>
+      <li><strong>Correction</strong> — request that inaccurate data be corrected.</li>
+      <li><strong>Deletion</strong> — request deletion of your data (see Section 5).</li>
+      <li><strong>Portability</strong> — export your vehicle data as CSV or PDF from within the App.</li>
+      <li><strong>Opt-out of analytics</strong> — disable Firebase Analytics in the App settings
+          or via your device's system settings.</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the address in Section 10.</p>
+  </section>
+
+  <section>
+    <h2>9. Security</h2>
+    <p>
+      We implement reasonable technical and organisational measures to protect your data:
+      local storage uses Android's application sandbox, cloud data is transmitted over TLS,
+      and Firebase storage is encrypted at rest. However, no method of transmission or storage
+      is 100% secure, and we cannot guarantee absolute security.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will update the
+      "Last updated" date at the top of this page. Material changes will be notified
+      in-app or via the App's Play Store listing. Continued use of the App after an update
+      constitutes your acceptance of the revised policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Contact Us</h2>
+    <p>
+      If you have any questions, requests, or concerns about this Privacy Policy,
+      please contact us at:
+    </p>
+    <p>
+      <strong>[YOUR NAME / COMPANY NAME]</strong><br />
+      Email: <a href="mailto:[YOUR_EMAIL]">[YOUR_EMAIL]</a><br />
+      <!-- Optional: Website: <a href="https://[YOUR_WEBSITE]">[YOUR_WEBSITE]</a> -->
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 ObsidianGarage. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
